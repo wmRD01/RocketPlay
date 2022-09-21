@@ -1,4 +1,4 @@
-System.register(["./application.8c625.js"], function (_export, _context) {
+System.register(["./application.7df5a.js"], function (_export, _context) {
   "use strict";
 
   var createApplication, canvas, $p, bcr;
@@ -66,23 +66,9 @@ System.register(["./application.8c625.js"], function (_export, _context) {
     }
   }
 
-  function cocos2dDebugCreate() {
-    var CocosDebug = false;
-    var DEBUG = false;
-
-    if (!DEBUG) {
-      if (!window.console) window.console = {};
-      var methods = ["log", "debug", "warn", "info", "timeEnd"];
-
-      for (var i = 0; i < methods.length; i++) {
-        console[methods[i]] = function () {};
-      }
-    }
-  }
-
   return {
-    setters: [function (_application8c625Js) {
-      createApplication = _application8c625Js.createApplication;
+    setters: [function (_application7df5aJs) {
+      createApplication = _application7df5aJs.createApplication;
     }],
     execute: function () {
       canvas = document.getElementById('GameCanvas');
@@ -90,7 +76,6 @@ System.register(["./application.8c625.js"], function (_export, _context) {
       bcr = $p.getBoundingClientRect();
       canvas.width = bcr.width;
       canvas.height = bcr.height;
-      cocos2dDebugCreate();
       createApplication({
         loadJsListFile: loadJsListFile,
         fetchWasm: fetchWasm
