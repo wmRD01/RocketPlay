@@ -1,4 +1,24 @@
 # RocketPlay
+## 0.0.11
+
+- 移除(bool)JaiJaiTest測試方式
+- 新增依照時間點隨機測試方式(bool)JaiJaiTest_ARJ
+- 新增完全隨機測試方式(bool)JaiJaiTest_RJ
+- 新增秒跳測試方式(bool)JaiJaiTest_SJ
+  
+## 0.0.10
+
+- 修正排行榜排序錯誤問題
+- 飛行中的人數不正確，在尚未玩家押注時人數異常甚至error
+- 新增測試參數，(bool)JaiJaiTest
+
+## 0.0.81
+
+-   拔掉只會在編譯期間生效的code
+
+## 0.0.8
+
+-   測試排行榜用，自動下注，自動跳船
 
 ## 0.0.7
 

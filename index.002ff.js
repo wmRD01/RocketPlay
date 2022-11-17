@@ -1,4 +1,4 @@
-System.register(["./application.84628.js"], function (_export, _context) {
+System.register(["./application.66512.js"], function (_export, _context) {
   "use strict";
 
   var createApplication, canvas, $p, bcr;
@@ -66,9 +66,23 @@ System.register(["./application.84628.js"], function (_export, _context) {
     }
   }
 
+  function cocos2dDebugCreate() {
+    var CocosDebug = false;
+    var DEBUG = false;
+
+    if (!DEBUG) {
+      if (!window.console) window.console = {};
+      var methods = ["log", "debug", "warn", "info", "timeEnd", "trace"];
+
+      for (var i = 0; i < methods.length; i++) {
+        console[methods[i]] = function () {};
+      }
+    }
+  }
+
   return {
-    setters: [function (_application84628Js) {
-      createApplication = _application84628Js.createApplication;
+    setters: [function (_application66512Js) {
+      createApplication = _application66512Js.createApplication;
     }],
     execute: function () {
       canvas = document.getElementById('GameCanvas');
